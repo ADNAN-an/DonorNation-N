@@ -74,7 +74,7 @@
           @endif
           <li><a class="nav-link {{ Request::is('donors*') ? 'active' : '' }}" href="{{ route('donorsPage') }}">Rechercher des donneurs</a></li>
           <li><a class="nav-link {{ Request::route()->getName() === 'blog' ? 'active' : '' }}" href="#departments">Blog</a></li>
-          <li><a class="nav-link {{ Request::route()->getName() === 'contacts' ? 'active' : '' }}" href="#footer">Contacts</a></li>
+          <li><a class="nav-link {{ Request::route()->getName() === 'home' ? '' : 'inactive' }}" href="{{ route('home') }}#contact-us">Contacts</a></li>
           @guest
     <a href="{{ route('login') }}" class="appointment-btn scrollto">
         <span class="d-none d-md-inline">Nous</span> Rejoindre
@@ -142,7 +142,7 @@
                  @endif
                  <li><i class="bx bx-chevron-right"></i> <a href="{{ route('donorsPage') }}">Rechercher des donneurs</a></li>
                  <li><i class="bx bx-chevron-right"></i> <a href="#">Blog</a></li>
-                 <li><i class="bx bx-chevron-right"></i> <a href="#">Contacts</a></li>
+                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}#contact-us">Contact</a></li>
                  </ul>
                </div>
 
@@ -180,3 +180,16 @@
       </div> 
     </div>
   </footer><!-- End Footer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sectionLink = document.querySelector('a[href="#contact-us"]');
+        sectionLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche le comportement de lien par défaut
+            
+            const targetSection = document.getElementById('contact-us');
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>

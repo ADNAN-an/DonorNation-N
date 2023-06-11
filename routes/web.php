@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DonorSearchController;
+use App\Http\Controllers\HomeController;
 use TCG\Voyager\Facades\Voyager;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,6 +50,7 @@ Route::prefix('/donors')->group(function () {
     Route::post('/search', [DonorSearchController::class, 'search'])->name('donorsSearch');
 });
 
+Route::post('/contact', [HomeController::class, 'store'])->name('contact');
 
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

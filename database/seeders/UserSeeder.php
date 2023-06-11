@@ -4,6 +4,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use TCG\Voyager\Models\Role;
 use Carbon\Carbon;
 use Faker\Factory as Faker;
 
@@ -20,7 +21,7 @@ class UserSeeder extends Seeder
         $bloodGroups = DB::table('blood_groups')->pluck('id');
         $faker = Faker::create();
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 5; $i++) {
             $minDate = Carbon::today()->subDays(60);
 
             DB::table('users')->insert([
