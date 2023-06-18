@@ -10,7 +10,7 @@
 
      <!-- start searsh form -->
      <section>
-        <div class="container">
+        <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-10 rounded-3 shadow p-5 position-relative bg-white searchBox">
                     <h3 class="text-center mb-4">Trouver des donneurs de sang près de chez vous vous.</h3>
@@ -132,7 +132,7 @@
                                     </strong>
                                 </div>
                             </div>
-                            
+
              @endforeach
 
                  {{-- {{ $donors->links() }} --}}

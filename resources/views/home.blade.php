@@ -7,14 +7,14 @@
             <h2>Be the reason for someone's heartbeat</h2>
             <h3>One pint of blood can save the live </h3>
 
-            <a href="#about" class="btn-get-started scrollto">Donner du sang </a>
+            <a href="{{ route('donner_sang') }}" class="btn-get-started scrollto">Donner du sang </a>
             <a href="{{ url('/blood-donation-process') }}" class="btn-get-started1 scrollto">S'informer </a>
         </div>
     </section><!-- End Hero -->
 
     <section class="RRR">
 
-        <div class="flex-container">
+        <div style="align-content: center" class="flex-container flex text-center">
 
             <div class="flex-box1">
                 <div>
@@ -37,6 +37,7 @@
                 </div>
                 <div><button> SAVOIR PLUS</button></div>
             </div>
+
         </div>
     </section>
 

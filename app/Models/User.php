@@ -3,11 +3,14 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use App\Donner;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class User extends \TCG\Voyager\Models\User
 {
@@ -163,5 +166,20 @@ class User extends \TCG\Voyager\Models\User
         return User::with('bloodGroup', 'City')
             ->where('DateDernierDon', '<=', $lastDonationThreshold)
             ->paginate(10);
+    }
+
+    // method for admin user
+    public function Admin(){
+        return Auth::user()->role_id == '1';
+    }
+
+    // method for normal user
+    public function Normal_user(){
+        return Auth::user()->role_id == '2';
+    }
+
+    // method for relashion between user and donner
+    public function donner(){
+        return $this->hasOne(Donner::class);
     }
 }
