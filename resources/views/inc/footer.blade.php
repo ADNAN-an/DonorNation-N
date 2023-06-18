@@ -28,8 +28,8 @@
                  <h4>{{ __('site.contacts') }}</h4>
                  <p>Tanger tanger tanger tanger<br>
                    Maroc maroc maroc maroc </p>
-                 <p>Phone: +212 6124785412<br>
-                   Email: donornation@gmail.com</p>
+                 <p>Phone: +2120000000<br>
+                   Email: xxxxxxxxx@gmail.com</p>
               </div>
                <div>
                  <h4>{{ __('site.footer_social_media') }}</h4>
