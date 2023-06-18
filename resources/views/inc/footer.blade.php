@@ -5,39 +5,35 @@
 
         <div class="row">
 
-              <div class="col-lg-4 col-md-6 footer-contact">
-                <h3>DONORNATION</h3>
-                <p>
-                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br><br>
-
-                </p>
-              </div>
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>DONORNATION</h3>
+            <p style="word-wrap: break-word;">
+              {{ __('site.footer_paragraph') }}
+            </p>
+          </div>
 
                <div class="col-lg-4 col-md-6 footer-links">
-                 <h4>Information</h4>
+                 <h4>{{ __('site.footer_information') }}</h4>
                  <ul>
-                 <li><i class="bx bx-chevron-right"></i> <a href="{{route('home')}}">Accueil</a></li>
-                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'donner' ? 'active' : '' }}" href="{{ route('donner') }}">Donner du sang</a></li>
-                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('donorsPage') }}">Rechercher des donneurs</a></li>
-                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
-                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}#contact-us">Contact</a></li>
+                 <li><i class="bx bx-chevron-right"></i> <a href="{{route('home')}}">{{ __('site.home') }}</a></li>
+                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'donner' ? 'active' : '' }}" href="{{ route('donner') }}">{{ __('site.donner') }}</a></li>
+                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('donorsPage') }}">{{ __('site.rechercher_donateurs') }}</a></li>
+                 <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">{{ __('site.blog') }}</a></li>
+                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}#contact-us">{{ __('site.contacts') }}</a></li>
                  </ul>
                </div>
 
               <div class="col-lg-4 col-md-6 footer-links">
                  <div>
-                 <h4>Contact us</h4>
+                 <h4>{{ __('site.contacts') }}</h4>
                  <p>Tanger tanger tanger tanger<br>
                    Maroc maroc maroc maroc </p>
                  <p>Phone: +2120000000<br>
                    Email: xxxxxxxxx@gmail.com</p>
               </div>
                <div>
-                 <h4>Social media</h4>
-                  <p>Visiter nos profiles social medias </p>
+                 <h4>{{ __('site.footer_social_media') }}</h4>
+                  <p>{{ __('site.footer_visit_social_profiles') }} </p>
                   <div class="social-links text-left text-md-right pt-3 pt-md-0">
                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -53,10 +49,10 @@
     <div class="container d-md-flex py-4">
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>DONORNATION</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>DONORNATION</span></strong>. {{ __('site.footer_rights_reserved') }}
         </div>
         <div class="credits">
-          Designed by <a href="file:///C:/Users/juan/OneDrive/Bureau/PFA/FORMULAIRE-DONOR.html">OUR-TEAM</a>
+          {{ __('site.footer_designed_by') }} <a href="file:///C:/Users/juan/OneDrive/Bureau/PFA/FORMULAIRE-DONOR.html">OUR-TEAM</a>
         </div>
       </div>
     </div>

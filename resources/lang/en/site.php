@@ -17,6 +17,12 @@ return [
     'admin'=> "Admin",
     'logout'=> "Logout",
     'my_account'=> "My Account",
+
+    //Cards
+    'donation_location_title' => 'Donation Location',
+    'donation_criteria_title' => 'Donation Criteria',
+    'donation_process_title' => 'Donation Process',
+    'learn_more_button' => 'LEARN MORE',
       
     //Contact section
     'contact_title' => "Contact Us",
@@ -25,5 +31,13 @@ return [
     'contact_subject_placeholder' => "Subject",
     'contact_message_placeholder' => "Message",
     'contact_send_button' => "Send Message",
-    'contact_success' => "Message sent successfully"
+    'contact_success' => "Message sent successfully",
+
+     //Footer section
+     'footer_information'=> "Information",
+     'footer_social_media'=> "Social Media",
+     'footer_rights_reserved'=> "All rights reserved",
+     'footer_designed_by'=> "Designed by",
+     'footer_visit_social_profiles'=> "Visit our social media profiles",
+     'footer_paragraph'=> "Our mission is to save lives by facilitating blood donation and connecting donors with those in need. Together, we can make a difference and support the community in need. Join us in this noble cause and together, let's save lives."
 ];

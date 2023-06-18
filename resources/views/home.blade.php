@@ -18,24 +18,24 @@
 
             <div class="flex-box1">
                 <div>
-                    <h1> Lieu de don </h1>
+                    <h1 style="white-space: nowrap;"> {{ __('site.donation_location_title') }} </h1>
                 </div>
 
-                <div> <button> SAVOIR PLUS</button></div>
+                <div> <button>{{ __('site.learn_more_button') }}</button></div>
             </div>
 
             <div class="flex-box2">
                 <div>
-                    <h1> Critere de don </h1>
+                    <h1 style="white-space: nowrap;">{{ __('site.donation_criteria_title') }}</h1>
                 </div>
-                <div> <button> SAVOIR PLUS</button> </div>
+                <div> <button>{{ __('site.learn_more_button') }}</button> </div>
             </div>
 
             <div class="flex-box3">
                 <div>
-                    <h1> Processus de don </h1>
+                    <h1 style="white-space: nowrap;"> {{ __('site.donation_process_title') }}</h1>
                 </div>
-                <div><button> SAVOIR PLUS</button></div>
+                <div><button>{{ __('site.learn_more_button') }}</button></div>
             </div>
 
         </div>
