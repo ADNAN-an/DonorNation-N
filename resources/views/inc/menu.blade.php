@@ -1,74 +1,99 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="{{route('home')}}" class="logo me-auto"><img src="{{ asset('public/img/logoyy.png')}}" alt="" class="img-fluid"></a>
-      <h1 class="logo me-auto"><a href="{{ route('home') }}">DONORNATION</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ route('home') }}" class="logo me-auto"><img src="{{ asset('public/img/logoyy.png') }}" alt=""
+                class="img-fluid"></a>
+        <h1 class="logo me-auto"><a href="{{ route('home') }}">DONORNATION</a></h1>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Accueil</a></li>
-          {{-- <li><a class="nav-link {{ Request::route()->getName() === 'donner_sang' ? 'active' : '' }}" href="{{ route('donner_sang') }}">Donner & Map</a></li> --}}
-          <li><a class="nav-link {{ Request::route()->getName() === 'donner' ? 'active' : '' }}" href="{{ route('donner') }}">Donner du sang</a></li>
-          <li><a class="nav-link {{ Request::is('donors*') ? 'active' : '' }}" href="{{ route('donorsPage') }}">Rechercher des donneurs</a></li>
-          <li><a class="nav-link {{ Request::route()->getName() === 'blog' ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a></li>
-          <li><a class="nav-link {{ Request::route()->getName() === 'home' ? '' : 'inactive' }}" href="{{ route('home') }}#contact-us">Contacts</a></li>
-          
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}"
+                        href="{{ route('home') }}">{{ __('site.home') }}</a></li>
+                <li><a class="nav-link {{ Request::route()->getName() === 'donner' ? 'active' : '' }}"
+                        href="{{ route('donner') }}">{{ __('site.donner') }}</a></li>
+                <li><a class="nav-link {{ Request::is('donors*') ? 'active' : '' }}"
+                        href="{{ route('donorsPage') }}">{{ __('site.rechercher_donateurs') }}</a></li>
+                <li><a class="nav-link {{ Request::route()->getName() === 'blog' ? 'active' : '' }}"
+                        href="{{ route('blog') }}">{{ __('site.blog') }}</a></li>
+                <li><a class="nav-link {{ Request::route()->getName() === 'home' ? '' : 'inactive' }}"
+                        href="{{ route('home') }}#contact-us">{{ __('site.contacts') }}</a></li>
 
-          @guest
-            <a href="{{ route('login') }}" class="appointment-btn scrollto">
-                <span class="d-none d-md-inline">Nous</span> Rejoindre
-            </a>
-            @else
-
-               @if(auth()->user()->Admin())
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
+                <li class="nav-item dropdown d-md-down-none">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        {{ strtoupper(app()->getLocale()) }}
                     </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a href="/admin" class="dropdown-item">
-                                <i class="fas fa-user me-2"></i>Admin &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                <i class="fas fa-sign-out-alt me-2"></i> {{ __('Logout') }} &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </li>
-                    </ul>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                <li>
+                                    <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
+                                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                        {{ $properties['native'] }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
                 </li>
+
+                @guest
+                    <a href="{{ route('login') }}" class="appointment-btn scrollto">
+                        <span class="d-none d-md-inline">{{ __('site.join_us') }}</span>
+                    </a>
                 @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a href="/admin/profile" class="dropdown-item">
-                                <i class="fas fa-user me-2"></i> Mon compte &emsp; &emsp; &emsp; &emsp; &emsp;
+                    @if (auth()->user()->Admin())
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
                             </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="/admin" class="dropdown-item">
+                                        <i class="fas fa-user me-2"></i>{{ __('site.admin') }} &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                                        &emsp;
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        <i class="fas fa-sign-out-alt me-2"></i> {{ __('site.logout') }} &emsp; &emsp; &emsp;
+                                        &emsp; &emsp; &emsp; &emsp;
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                <i class="fas fa-sign-out-alt me-2"></i> {{ __('Logout') }} &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                    @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
                             </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
+
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="/admin/profile" class="dropdown-item">
+                                        <i class="fas fa-user me-2"></i> {{ __('site.my_account') }} &emsp; &emsp; &emsp; &emsp; &emsp;
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        <i class="fas fa-sign-out-alt me-2"></i> {{ __('site.logout') }} &emsp; &emsp; &emsp;
+                                        &emsp; &emsp; &emsp; &emsp;
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                            </ul>
                         </li>
-                    </ul>
-                </li>
-                @endif
-            @endguest
+                    @endif
+                @endguest
 
 
-      </nav><!-- .navbar -->
-  </header>
+        </nav><!-- .navbar -->
+</header>

@@ -178,7 +178,7 @@ class User extends \TCG\Voyager\Models\User
         return Auth::user()->role_id == '2';
     }
 
-    // method for relashion between user and donner
+    // method for relation between user and donner
     public function donner(){
         return $this->hasOne(Donner::class);
     }

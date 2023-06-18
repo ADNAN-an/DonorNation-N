@@ -43,7 +43,7 @@ class HomeController extends Controller
 
         $contact->save();
 
-        return redirect()->route('home', ['#contact-us'])->with('success', 'Message envoyé');
+        return redirect()->route('home', ['#contact-us'])->with('success', __('site.contact_success'));
     }
 
     // blog method
