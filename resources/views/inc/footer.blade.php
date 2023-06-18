@@ -20,11 +20,7 @@
                  <h4>Information</h4>
                  <ul>
                  <li><i class="bx bx-chevron-right"></i> <a href="{{route('home')}}">Accueil</a></li>
-                 @if (Auth::check())
-                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Donner du sang</a></li>
-                 @else
-                 <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto {{ Request::is('blood-donation-process') ? 'active' : '' }}" href="{{ url('/blood-donation-process') }}">Donner du sang</a></li>
-                 @endif
+                 <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'donner' ? 'active' : '' }}" href="{{ route('donner') }}">Donner du sang</a></li>
                  <li><i class="bx bx-chevron-right"></i> <a href="{{ route('donorsPage') }}">Rechercher des donneurs</a></li>
                  <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
                  <li><i class="bx bx-chevron-right"></i><a class="nav-link {{ Request::route()->getName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}#contact-us">Contact</a></li>

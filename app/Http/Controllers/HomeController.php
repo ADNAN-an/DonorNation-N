@@ -74,9 +74,8 @@ class HomeController extends Controller
             'date' => 'required',
             'url' => 'required',
         ], [
-            'date.required' => trans('site.date_require'),
-            //'date.required' => "🔥 excuse moi La Date du donne sang il est nécessaire  🔥",
-            'url.required' => "🔥 excuse moi il est nécessaire de sélectionner le center de donne sang dans la map 🔥",
+            'date.required' => trans('Veuillez sélectionner une date'),
+            'url.required' => "Veuillez sélectionner un centre de don",
         ]);
 
         Donner::create([
@@ -90,6 +89,6 @@ class HomeController extends Controller
             'donner_langtitude' => $request->get('lng'),
         ]);
 
-        return redirect()->back()->with('success', 'La réservation pour donne sang il est faire avec success');
+        return redirect()->back()->with('success', 'Félicitations ! Votre réservation a été effectuée avec succès.');
     }
 }

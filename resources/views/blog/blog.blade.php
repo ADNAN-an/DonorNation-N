@@ -19,7 +19,6 @@
               <div class="image"><img src="{{ Voyager::image( $post->image ) }}" style="width: 850px;height: 200px;" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>{{ $post->title }}</h4>
-                <span>Chief Medical Officer</span>
                 <p>
                     {{ $post->excerpt  }}
                 </p>

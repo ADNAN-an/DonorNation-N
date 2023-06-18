@@ -47,7 +47,7 @@ Route::group(
         
         Route::get('/blood-donation-process', function () {
             return view('donner');
-        });
+        })->name('donner');
         
         // Route::get('/search', function () {
         //     return view('search');

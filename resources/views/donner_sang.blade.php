@@ -97,7 +97,7 @@
       <div class="container my-5">
 
         <div class="section-title">
-          <h2>Donner Song</h2>
+          <h2>Réservez votre rendez-vous pour un don du sang </h2>
         </div>
 
         @if (session()->has('success'))
@@ -122,7 +122,7 @@
                     <div class="row">
 
                     <div style="width: 900px" class="form-group mx-5">
-                        <label for="">Date du don de sang</label>
+                        <label for="">Sélectionnez la date du rendez-vous</label>
                        <input {{-- step="7" --}} name="date" class="form-control" type="date">
                        @error('date')
                           <div class="alert alert-danger">
@@ -133,12 +133,10 @@
 
                     <div style="width: 200px" class="form-group">
                         <label for=""></label>
-                      <button class="btn btn-primary">Prendre un rendez-vous</button>
+                      <button class="btn btn-primary">Réserver maintenant</button>
                     </div>
 
                     </div>
-
-
 
               </div>
                     </div>
@@ -147,7 +145,7 @@
 
                  <div  class="form-group mx-5">
                   
-                        <label for=""><h4>sélectionner le center de donne sang dans la map</h4></label>
+                        <label for=""><h4>Choisissez le centre de collecte</h4></label>
                         @error('url')
                           <div class="alert alert-danger">
                             <span class="alert alert-danger">{{ $message }}</span>

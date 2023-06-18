@@ -20,8 +20,13 @@
           <h2>Si vous avez des questions concernant votre éligibilité,<br>
              veuillez nous appeler au +212 537 77 33 24 </h2>
     
-          <a href="#about" class="btn-get-started scrollto"> Learn more </a>
-          <a href="{{ route('register') }}" class="btn-get-started1 scrollto">Donner </a>
+                <a href="#about" class="btn-get-started scrollto">En savoir plus</a>
+                @if(Auth::check())
+                  <a href="{{ route('donner_sang') }}" class="btn-get-started1 scrollto">Donner du sang</a>
+                @else
+                  <a href="{{ route('login') }}" class="btn-get-started1 scrollto">Se connecter</a>
+                @endif
+        
         </div>
 
         <div class="right">
