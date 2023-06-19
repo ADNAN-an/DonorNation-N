@@ -42,12 +42,18 @@
     </section>
     
 
-    <section id="QNS" class="xx">
-
+    <section id="QNS" >
+{{-- 
         <div class="leftx"  >
-           <img class="imagex" src="donner.jpg" alt="Image">
+           <img class="imagex" src=url("../img/about.jpg") alt="Image">
         </div>
-          
+           --}}
+
+
+           <div class="leftx">
+            <img class="imagex" src="{{ asset('/public/img/donner.jpg') }}" alt="Image">
+        </div>
+        
 
        <div class="rightx" style="padding-top: 0px;" >
 
@@ -69,11 +75,12 @@
          <!-- <a href="#about" class="btn-get-started scrollto"> Learn more </a> -->
          <a href="#about" class="btn-get-started1 scrollto">Donner maintenant </a>
        </div>
+    </section>
     <!-- ======= CONTACT US Section ======= -->
 
 
     {{-- ways to help --}}
-    <section id="WTH" class="yy">
+    <section id="WTH" >
         <div class="lefty">
           <h1>Ways to help</h1>
           <hr class="divider-line" style="max-width:100%;width:100px;color: red;margin-top: 10px; margin-left: 0px;">
@@ -90,7 +97,7 @@
         </div>
 
         <div class="righty">
-            <img class="imagey" src="waystohelp.jpg" alt="Image">
+            <img class="imagey"  src="{{ asset('/public/img/waystohelp.jpg') }}" alt="Image">
         </div>
       </section>
 
@@ -150,11 +157,11 @@
     <!-- End CONTACT US Section -->
 
 
-    <section style="background: url('../public/img/zzzee.jpg');height: 337px;">
+    <section style="background: url('../public/img/zzzee.jpg');height: 337px;width:99%">
 
         <h1
             style="margin-left: 150px;
-        padding-top: 100px;
+        padding-top: 50px;
         font-weight: 600;
         /* font-style: normal; */
         font-family: 'Poppins', sans-serif;
@@ -213,6 +220,7 @@
           background-size: cover;
           margin-bottom: 00px;
           display: flex;
+          margin-top: -50px
       
         }
         .imagex {
@@ -316,7 +324,7 @@
       # ways to help  
       --------------------------------------------------------------*/
       #WTH     {
-          width: 99%;
+          width: 95%;
           height: 90vh;
           background-size: cover;
           margin-bottom: 00px;
