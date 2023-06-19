@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DONORNATION</title>
+  <title>@yield('title' , 'DONORNATION')</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 {{--   <script src="{{ asset('public/js/app.js') }}" defer></script> --}}

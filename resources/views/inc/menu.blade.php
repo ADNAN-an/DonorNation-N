@@ -75,7 +75,7 @@
 
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a href="/admin/profile" class="dropdown-item">
+                                    <a href="{{ route('profile' , Auth::user()->name) }}" class="dropdown-item">
                                         <i class="fas fa-user me-2"></i> {{ __('site.my_account') }} &emsp; &emsp; &emsp; &emsp; &emsp;
                                     </a>
                                 </li>

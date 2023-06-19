@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Client\Request as ClientRequest;
 use Illuminate\Http\Request;
 use App\Donner;
-use App\Models\Contact;
+use App\Models\Contact as ModelsContact;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use TCG\Voyager\Models\Post;
 
@@ -57,7 +59,7 @@ class HomeController extends Controller
     public function single_post($slug)
     {
         $post = Post::where('slug', $slug)->first();
-       
+
         return view('blog.blog_show', ['post' => $post]);
     }
 
@@ -74,8 +76,8 @@ class HomeController extends Controller
             'date' => 'required',
             'url' => 'required',
         ], [
-            'date.required' => trans('Veuillez sélectionner une date'),
-            'url.required' => "Veuillez sélectionner un centre de don",
+            'date.required' => 'Veuillez sélectionner une date',
+            'url.required'  => "Veuillez sélectionner un centre de don",
         ]);
 
         Donner::create([
@@ -90,5 +92,13 @@ class HomeController extends Controller
         ]);
 
         return redirect()->back()->with('success', 'Félicitations ! Votre réservation a été effectuée avec succès.');
+    }
+
+    // method for user profile
+    public function user_profile($username)
+    {
+        $user_profile_data = User::where('name', $username)->with('City', 'bloodGroup')->first();
+
+        return view('user_profile',  compact('user_profile_data'));
     }
 }
