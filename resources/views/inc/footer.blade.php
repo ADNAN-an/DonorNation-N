@@ -26,30 +26,31 @@
               <div class="col-lg-4 col-md-6 footer-links">
                  <div>
                  <h4>{{ __('site.contacts') }}</h4>
-                 <p>Tanger tanger tanger tanger<br>
-                   Maroc maroc maroc maroc </p>
-                 <p>Phone: +2120000000<br>
-                   Email: xxxxxxxxx@gmail.com</p>
+                 <p>Rue moulay mehdi bennani<br>
+                   Tanger,Maroc</p>
+                 <p>Phone: +212123456789<br>
+                   Email: DonorNation_Maroc@gmail.com</p>
               </div>
                <div>
                  <h4>{{ __('site.footer_social_media') }}</h4>
                   <p>{{ __('site.footer_visit_social_profiles') }} </p>
-                  <div class="social-links text-left text-md-right pt-3 pt-md-0">
-                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                   <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                   <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                   <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                   <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  <div class="social-linksz text-left text-md-right pt-3 pt-md-0">
+                   
+                   <a href="#" class="facebook"><i class="fa-brands fa-facebook fa-2xl" style="color: #284d82;margin-right:7px"></i></i></a>
+                   <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #284d82;margin-right:7px"></i></a>
+                   <a href="#" class="instagram"><i class="fa-brands fa-instagram fa-2xl"  style="color: #284d82;margin-right:7px"></i></a>
+                   <a href="#" class="linkedin"><i class="fa-brands fa-linkedin fa-2xl" style="color: #284d82;margin-right:7px"></i></a>
+                   <a href="#" class="twitter"><i class="fa-brands fa-twitter fa-2xl" style="color: #284d82;margin-right:7px"></i></a>
                  </div>
                 </div>
               </div>
         </div>
       </div>
     </div>
-    <div class="container d-md-flex py-4">
+    <div class="container d-md-flex py-4 " style="height: 40px;margin-top:-15px">
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>DONORNATION</span></strong>. {{ __('site.footer_rights_reserved') }}
+          &copy; 2023 <strong><span>DONORNATION</span></strong> {{ __('site.footer_rights_reserved') }}
         </div>
         <div class="credits">
           {{ __('site.footer_designed_by') }} <a href="file:///C:/Users/juan/OneDrive/Bureau/PFA/FORMULAIRE-DONOR.html">OUR-TEAM</a>
