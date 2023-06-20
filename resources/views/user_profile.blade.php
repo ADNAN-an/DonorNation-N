@@ -9,10 +9,14 @@
   <style>
     /* for card */
 .card {
-    width: 400px;
+    width: 750px;
     border: none;
-    border-radius: 10px;
-    background-color: #fff
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-left: 300px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: 1px solid gray;
 }
 
 .stats {
@@ -52,33 +56,35 @@
 
 @section('content')
 
-<section>
+<section style="background-color: #e5e5e5a4">
   <div class="searchResult container">
 
       <div class="row ">
-    <h3 class="text-primary">User Profile Data : </h3> <br>
-            <div class="card card-primary col-md-4">
+    <h3 class="text-primary" style="margin-left:600px;margin-bottom:50px;font-weight:700;"> PROFILE </h3> <br>
+            {{-- <div class="card card-primary col-md-4">
                 <div >
                     <div class="image">
                         <img src="{{ Voyager::image($user_profile_data->avatar) }}" class="rounded" width="300">
                         </div>
 
                 </div>
-            </div>
+            </div> --}}
 
             <div class="card card-primary col-md-8">
                 <div>
-                            <h4 class="mb-0 mt-0">Username : <span class="text-danger"> {{ $user_profile_data->name  }} {{ $user_profile_data->prenom  }} </span></h4>
-                               <br>
-                               <h4 class="mb-0 mt-0">Email : <span class="text-danger"> {{ $user_profile_data->email  }} </span></h4>
-                               <br>
-                             <h4 class="mb-0 mt-0">Téléphone: <span class="text-danger"> {{ $user_profile_data->phone_number  }} </span> </h4>
-                               <br>
-                              <h4 class="mb-0 mt-0">Ville :   <span class="text-danger"> {{ $user_profile_data->City->name  }} </span></h4>
-                                 <br>
-                                 <h4 class="mb-0 mt-0">BloodGroup : <span class="text-danger"> {{ $user_profile_data->BloodGroup->BloodGroup  }} </span></h4>
-                                 <br>
-                            <h4>DateDernierDon :  <span class="text-danger"> Le  {{ $user_profile_data->DateDernierDon }}  On ( {{ ($user_profile_data->created_at)->diffForHumans()  }} ) </span></h4>
+                               <h4 class="mb-10 mt-20">Nom    &nbsp;  &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;  <span class="text-dangerx" style="color: rgb(162, 162, 172)"> {{ $user_profile_data->name  }}  </span></h4>
+                               <hr>                         
+                               <h4 class="mb-10 mt-10">Prénom  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  <span class="text-dangerx"> {{ $user_profile_data->prenom  }}</span></h4>
+                               <hr>
+                               <h4 class="mb-10 mt-10">Email  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->email  }} </span></h4>
+                               <hr>
+                               <h4 class="mb-10 mt-10">Numéro de Téléphone   &nbsp; &nbsp;  &emsp;  <span class="text-dangerx"> {{ $user_profile_data->phone_number  }} </span> </h4>
+                               <hr>
+                                <h4 class="mb-10 mt-10">Ville  &nbsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->City->name  }} </span></h4>
+                                <hr>
+                                 <h4 class="mb-10 mt-10">Type De Sang   &nbsp; &nbsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->BloodGroup->BloodGroup  }} </span></h4>
+                                 <hr>
+                                <h4 class="mb-20 mt-10">Date Du Dernier Don  &nbsp;  &emsp; &emsp;<span class="text-dangerx"> Le  {{ $user_profile_data->DateDernierDon }}  On ( {{ ($user_profile_data->created_at)->diffForHumans()  }} ) </span></h4>
 
                 </div>
             </div>

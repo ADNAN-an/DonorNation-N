@@ -514,11 +514,13 @@ a.appointment-btn.scrollto:hover {
   color: #fff;
   background: #ff0000;
   margin-right: 40px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.30);
 }
 
 #hero .btn-get-started:hover {
   background: #ffffff;
   color: #ff0000;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -536,11 +538,13 @@ a.appointment-btn.scrollto:hover {
   color: #000000;
   background: #ffffff;
   margin-right: 40px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.30);
 }
 
 #hero .btn-get-started1:hover {
   background: #ff0000;
   color: #ffffff;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -1857,7 +1861,7 @@ section {
   /* justify-content: space-between; */
   margin-left: 75px;
   margin-top: 50px;
-  background-color: #e6f3ff;
+  background-color: #ffffff;
 
 }
 
@@ -1983,7 +1987,7 @@ color: rgb(255, 255, 255);
       
   }
   .RRR{
-    background-color: #e6f3ff;
+    background-color: #ffffff;
   }
 
 /*--------------------------------------------------------------

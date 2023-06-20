@@ -10,9 +10,65 @@
             <a href="{{ route('donner_sang') }}" class="btn-get-started scrollto">{{ __('site.donate_blood') }} </a>
             <a href="{{ url('/blood-donation-process') }}" class="btn-get-started1 scrollto">{{ __('site.learn_more') }}</a>
         </div>
-    </section><!-- End Hero -->
+    </section>
+    <!-- End Hero -->
+     {{-- QUI NOUS SOMME SECCTION      --}}
 
-    <section class="RRR">
+    <section id="QNS" >
+
+           <div class="leftx">
+            <img class="imagex" src="{{ asset('/public/img/donner.jpg') }}" alt="Image">
+        </div>
+        
+
+       <div class="rightx" style="padding-top: 0px;" >
+
+         <h1>Qui nous sommes</h1>
+         <hr class="divider-line" style="max-width:100%;width:100px;margin-left: 0px;margin-top: 15px;margin-bottom: 15px; border: 3px solid #9e0000;">
+
+         <h2 style="text-align: justify;">
+           Nous sommes une équipe passionnée dédiée à la promotion du don de sang et à la sauvegarde des vies.
+           Notre mission est de faciliter la recherche de donneurs de sang pour répondre aux besoins urgents des patients.
+           Nous croyons en la générosité et en l'impact positif que chaque personne peut avoir en faisant don de son sang.
+           Avec notre plateforme conviviale et sécurisée, vous pouvez trouver rapidement des donneurs compatibles près de chez vous.
+           Nous nous engageons à garantir la confidentialité des informations et à assurer une expérience agréable et fiable pour tous les utilisateurs.
+           <p>   </p>
+          <br> Rejoignez-nous dans notre lutte pour sauver des vies et devenir un héros du don de sang  
+         
+         </h2>
+         
+   
+         <!-- <a href="#about" class="btn-get-started scrollto"> Learn more </a> -->
+         <a href="{{ route('donner') }}" class="btn-get-started1 scrollto">Donner maintenant </a>
+       </div>
+    </section>
+    
+
+    {{-- ways to help SECTION  --}}
+    <section id="WTH" >
+        <div class="lefty">
+          <h1>Ways to help</h1>
+          <hr class="divider-line" style="max-width:100%;width:100px;margin-top: 10px; margin-left: 0px; border: 3px solid #9e0000;">
+
+          <h2 style="text-align: justify;">Blood Center is public donation center with blood donation members in the changing health care system. Founded in 1978, Blood Center is one of the nation’s oldest and largest nonprofit transfusion medicine organizations. We provide a blood and volunteer services across the US. With our national footprint, deep community roots and specialized services, we are the thread that connects people and resources together to fuel progress in transfusion medicine. </h2>
+          <h3> &nbsp;</h3>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Inspiring people to give blood</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Specialist blood donors and clinical supervision.</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> High quality assessment, diagnosis and treatment.</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Offering specialized patient services and pharmaceuticals</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Increasing communication with our members.</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Producing a safe and ready blood supply</h4>
+
+        </div>
+
+        <div class="righty">
+            <img class="imagey"  src="{{ asset('/public/img/waystohelp.jpg') }}" alt="Image">
+        </div>
+      </section>
+
+
+
+      <section class="RRR">
 
         <div style="align-content: center" class="flex-container flex text-center">
 
@@ -40,66 +96,9 @@
 
         </div>
     </section>
-    
-
-    <section id="QNS" >
-{{-- 
-        <div class="leftx"  >
-           <img class="imagex" src=url("../img/about.jpg") alt="Image">
-        </div>
-           --}}
 
 
-           <div class="leftx">
-            <img class="imagex" src="{{ asset('/public/img/donner.jpg') }}" alt="Image">
-        </div>
-        
-
-       <div class="rightx" style="padding-top: 0px;" >
-
-         <h1>Qui nous sommes</h1>
-         <hr class="divider-line" style="max-width:100%;width:100px;color: red;margin-left: 0px;margin-top: 15px;margin-bottom: 15px;">
-
-         <h2 style="text-align: justify;">
-           Nous sommes une équipe passionnée dédiée à la promotion du don de sang et à la sauvegarde des vies.
-           Notre mission est de faciliter la recherche de donneurs de sang pour répondre aux besoins urgents des patients.
-           Nous croyons en la générosité et en l'impact positif que chaque personne peut avoir en faisant don de son sang.
-           Avec notre plateforme conviviale et sécurisée, vous pouvez trouver rapidement des donneurs compatibles près de chez vous.
-           Nous nous engageons à garantir la confidentialité des informations et à assurer une expérience agréable et fiable pour tous les utilisateurs.
-           <p>   </p>
-          <br> Rejoignez-nous dans notre lutte pour sauver des vies et devenir un héros du don de sang  
-         
-         </h2>
-         
-   
-         <!-- <a href="#about" class="btn-get-started scrollto"> Learn more </a> -->
-         <a href="{{ route('donner') }}" class="btn-get-started1 scrollto">Donner maintenant </a>
-       </div>
-    </section>
-    <!-- ======= CONTACT US Section ======= -->
-
-
-    {{-- ways to help --}}
-    <section id="WTH" >
-        <div class="lefty">
-          <h1>Ways to help</h1>
-          <hr class="divider-line" style="max-width:100%;width:100px;color: red;margin-top: 10px; margin-left: 0px;">
-
-          <h2 style="text-align: justify;">Blood Center is public donation center with blood donation members in the changing health care system. Founded in 1978, Blood Center is one of the nation’s oldest and largest nonprofit transfusion medicine organizations. We provide a blood and volunteer services across the US. With our national footprint, deep community roots and specialized services, we are the thread that connects people and resources together to fuel progress in transfusion medicine. </h2>
-          <h3> &nbsp;</h3>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Inspiring people to give blood</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Specialist blood donors and clinical supervision.</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> High quality assessment, diagnosis and treatment.</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Offering specialized patient services and pharmaceuticals</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Increasing communication with our members.</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Producing a safe and ready blood supply</h4>
-
-        </div>
-
-        <div class="righty">
-            <img class="imagey"  src="{{ asset('/public/img/waystohelp.jpg') }}" alt="Image">
-        </div>
-      </section>
+<!-- ======= CONTACT US Section ======= -->
 
     <section id="contact-us" class="contact-us section-bg">
         <div class="container">
@@ -155,7 +154,7 @@
         </div>
     </section>
     <!-- End CONTACT US Section -->
-
+   
 
     <section   style="background: url('../public/img/zzzee.jpg');height: 337px;width:99%">
 
@@ -170,7 +169,7 @@
         letter-spacing: 1px;
       ">
             Devenir Un Donneur Du Sang</h1>
-        <hr class="divider-line" style="max-width:100%;width:100px;color: red;margin-left: 150px;margin-top: 0px;">
+        <hr class="divider-line" style="max-width:100%;width:100px;margin-left: 150px;margin-top: 0px; border: 3px solid #9e0000;">
 
 
         <h3
@@ -198,6 +197,7 @@
           padding-left: 80px;
           padding-right: 80px;
           border:none;
+          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.30);
 
       
         
@@ -207,14 +207,7 @@
 
     </section>
 
-
-
-
     <style>
-
-
-
-
         /*--------------------------------------------------------------
         # qns Section
         --------------------------------------------------------------*/
@@ -225,7 +218,7 @@
           background-size: cover;
           margin-bottom: 00px;
           display: flex;
-          margin-top: -100px
+          margin-top: 0px
       
         }
         .imagex {
@@ -280,11 +273,13 @@
           margin-right: 40px;
           padding-left: 80px;
           padding-right: 80px;
+          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.30);
         }
         
         #QNS .btn-get-started1:hover {
           background: #4f4f4f;
           color: #ffffff;
+          box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
         
         }
         
