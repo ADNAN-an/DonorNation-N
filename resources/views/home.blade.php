@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <section id="hero" style="margin-top: 73px" class="d-flex align-items-center">
+    <section id="hero" style="margin-top: 72px" class="d-flex align-items-center">
         <div class="container">
             <h1>{{ __('site.welcome_title') }}</h1>
             <h2>{{ __('site.welcome_subtitle') }}</h2>
@@ -103,7 +103,7 @@
                 </div>
             @endif
             <div class="section-title">
-                <h2>{{ __('site.contact_title') }}</h2>
+                <h2 style="color: #000000">{{ __('site.contact_title') }}</h2>
                 <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
             </div>
 
@@ -141,7 +141,7 @@
                           <div class="error-message"></div>
                           <div class="sent-message">Your Message has been sent successfully. Thank you!</div>
                         </div> -->
-                <div class="text-center"><button type="submit">{{ __('site.contact_send_button') }}</button></div>
+                <div class="text-center"><button  style=" box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);"  type="submit">{{ __('site.contact_send_button') }}</button></div>
             </form>
 
         </div>
