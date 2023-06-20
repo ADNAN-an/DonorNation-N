@@ -29,7 +29,7 @@
                  <p>Rue moulay mehdi bennani<br>
                    Tanger,Maroc</p>
                  <p>Phone: +212123456789<br>
-                   Email: DonorNation_Maroc@gmail.com</p>
+                   Email: DonorNation@gmail.com</p>
               </div>
                <div>
                  <h4>{{ __('site.footer_social_media') }}</h4>

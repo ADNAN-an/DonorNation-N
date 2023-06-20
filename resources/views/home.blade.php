@@ -14,34 +14,29 @@
     <!-- End Hero -->
      {{-- QUI NOUS SOMME SECCTION      --}}
 
-    <section id="QNS" >
-
-           <div class="leftx">
-            <img class="imagex" src="{{ asset('/public/img/donner.jpg') }}" alt="Image">
-        </div>
-        
-
-       <div class="rightx" style="padding-top: 0px;" >
-
-         <h1>Qui nous sommes</h1>
-         <hr class="divider-line" style="max-width:100%;width:100px;margin-left: 0px;margin-top: 15px;margin-bottom: 15px; border: 3px solid #9e0000;">
-
-         <h2 style="text-align: justify;">
-           Nous sommes une équipe passionnée dédiée à la promotion du don de sang et à la sauvegarde des vies.
-           Notre mission est de faciliter la recherche de donneurs de sang pour répondre aux besoins urgents des patients.
-           Nous croyons en la générosité et en l'impact positif que chaque personne peut avoir en faisant don de son sang.
-           Avec notre plateforme conviviale et sécurisée, vous pouvez trouver rapidement des donneurs compatibles près de chez vous.
-           Nous nous engageons à garantir la confidentialité des informations et à assurer une expérience agréable et fiable pour tous les utilisateurs.
-           <p>   </p>
-          <br> Rejoignez-nous dans notre lutte pour sauver des vies et devenir un héros du don de sang  
-         
-         </h2>
-         
-   
-         <!-- <a href="#about" class="btn-get-started scrollto"> Learn more </a> -->
-         <a href="{{ route('donner') }}" class="btn-get-started1 scrollto">Donner maintenant </a>
-       </div>
-    </section>
+     <section id="QNS">
+      <div class="leftx">
+          <img class="imagex" src="{{ asset('/public/img/donner.jpg') }}" alt="Image">
+      </div>
+  
+      <div class="rightx" style="padding-top: 0px;">
+          <h1>{{ __('site.title') }}</h1>
+          <hr class="divider-line" style="max-width:100%;width:100px;margin-left: 0px;margin-top: 15px;margin-bottom: 15px; border: 3px solid #9e0000;">
+  
+          <h2 style="text-align: justify;">
+              {{ __('site.paragraph1') }}
+              {{ __('site.paragraph2') }}
+              {{ __('site.paragraph3') }}
+              {{ __('site.paragraph4') }}
+              {{ __('site.paragraph5') }}
+              <p>   </p>
+              <br>{{ __('site.paragraph6') }}
+          </h2>
+  
+          <a href="{{ route('donner') }}" class="btn-get-started1 scrollto">{{ __('site.button') }}</a>
+      </div>
+  </section>
+  
     
 
     {{-- ways to help SECTION  --}}
@@ -156,56 +151,25 @@
     <!-- End CONTACT US Section -->
    
 
-    <section   style="background: url('../public/img/zzzee.jpg');height: 337px;width:99%">
+    <section style="background: url('../public/img/zzzee.jpg');height: 337px;width:99%">
 
-        <h1
-            style="margin-left: 150px;
-        padding-top: 25px;
-        font-weight: 600;
-        /* font-style: normal; */
-        font-family: 'Poppins', sans-serif;
-        color: #000000;
-        font-size: 46px;
-        letter-spacing: 1px;
-      ">
-            Devenir Un Donneur Du Sang</h1>
-        <hr class="divider-line" style="max-width:100%;width:100px;margin-left: 150px;margin-top: 0px; border: 3px solid #9e0000;">
-
-
-        <h3
-            style="margin-left: 150px;  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-        font-size: 17px;
-        line-height: 1.42857143;
-        color: #636a6d;">
-            Tous les types de sang sont nécessaires pour aider les patients</h3>
-
-        <!-- ajourer ici le lien du button  -->
-        <a href="{{ route('donner') }}"><button   style="
-          font-family: Raleway, sans-serif;          
-          text-transform: uppercase;
-          font-weight: 500;
-          font-size: 14px;
-          letter-spacing: 1px;
-          display: inline-block;
-          padding: 12px 0px;
-          margin-top: 30px;
-          border-radius: 50px;
-          transition: 0.5s;
-          color: #ffffff;
-          background: #ff0000;
-          margin-left:145px;
-          padding-left: 80px;
-          padding-right: 80px;
-          border:none;
-          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.30);
-
-      
-        
-        ">
-                DONNER</button></a>
-
-
-    </section>
+      <h1 style="margin-left: 150px;padding-top: 25px;font-weight: 600;font-family: 'Poppins', sans-serif;color: #000000;font-size: 46px;letter-spacing: 1px;">
+          {{ __('site.become_donor_title') }}
+      </h1>
+      <hr class="divider-line" style="max-width:100%;width:100px;margin-left: 150px;margin-top: 0px;border: 3px solid #9e0000;">
+  
+      <h3 style="margin-left: 150px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 17px;line-height: 1.42857143;color: #636a6d;">
+          {{ __('site.all_blood_types_needed') }}
+      </h3>
+  
+      <a href="{{ route('donner') }}">
+          <button style="font-family: Raleway, sans-serif;text-transform: uppercase;font-weight: 500;font-size: 14px;letter-spacing: 1px;display: inline-block;padding: 12px 0px;margin-top: 30px;border-radius: 50px;transition: 0.5s;color: #ffffff;background: #ff0000;margin-left:145px;padding-left: 80px;padding-right: 80px;border:none;box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.30);">
+              {{ __('site.donate_button') }}
+          </button>
+      </a>
+  
+  </section>
+  
 
     <style>
         /*--------------------------------------------------------------
