@@ -41,11 +41,6 @@
         </div>
     </section>
     
-<<<<<<< HEAD
-    <!-- ======= CONTACT US Section ======= -->
-
-
-=======
 
     <section id="QNS" >
 {{-- 
@@ -78,7 +73,7 @@
          
    
          <!-- <a href="#about" class="btn-get-started scrollto"> Learn more </a> -->
-         <a href="#about" class="btn-get-started1 scrollto">Donner maintenant </a>
+         <a href="{{ route('donner') }}" class="btn-get-started1 scrollto">Donner maintenant </a>
        </div>
     </section>
     <!-- ======= CONTACT US Section ======= -->
@@ -106,7 +101,6 @@
         </div>
       </section>
 
->>>>>>> f1d7075bb1fd57f6d5b5fff8385c1f05c68126ff
     <section id="contact-us" class="contact-us section-bg">
         <div class="container">
             @if (session('success'))
@@ -163,11 +157,11 @@
     <!-- End CONTACT US Section -->
 
 
-    <section style="background: url('../public/img/zzzee.jpg');height: 337px;width:99%">
+    <section   style="background: url('../public/img/zzzee.jpg');height: 337px;width:99%">
 
         <h1
             style="margin-left: 150px;
-        padding-top: 50px;
+        padding-top: 25px;
         font-weight: 600;
         /* font-style: normal; */
         font-family: 'Poppins', sans-serif;
@@ -176,7 +170,7 @@
         letter-spacing: 1px;
       ">
             Devenir Un Donneur Du Sang</h1>
-        <hr class="divider-line" style="max-width:100%;width:100px;color: red;margin-left: 150px;margin-top: -20px;">
+        <hr class="divider-line" style="max-width:100%;width:100px;color: red;margin-left: 150px;margin-top: 0px;">
 
 
         <h3
@@ -187,30 +181,32 @@
             Tous les types de sang sont nécessaires pour aider les patients</h3>
 
         <!-- ajourer ici le lien du button  -->
-        <a href="#about"><button
-                style="font-family: Raleway, sans-serif;  
-    
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 12px 35px;
-        margin-top: 20px;
-        border-radius: 10px;
-        transition: 0.5s;
-        color: #000000;
-        background: #ff0000;
-        margin-left: 150px;
-        cursor: pointer;
+        <a href="{{ route('donner') }}"><button   style="
+          font-family: Raleway, sans-serif;          
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 1px;
+          display: inline-block;
+          padding: 12px 0px;
+          margin-top: 30px;
+          border-radius: 50px;
+          transition: 0.5s;
+          color: #ffffff;
+          background: #ff0000;
+          margin-left:145px;
+          padding-left: 80px;
+          padding-right: 80px;
+          border:none;
+
+      
+        
         ">
                 DONNER</button></a>
 
 
     </section>
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -222,27 +218,28 @@
         /*--------------------------------------------------------------
         # qns Section
         --------------------------------------------------------------*/
+       
         #QNS     {
           width: 99%;
           height: 90vh;
           background-size: cover;
           margin-bottom: 00px;
           display: flex;
-          margin-top: -50px
+          margin-top: -100px
       
         }
         .imagex {
          width: 120% ;
          height: 550px;
          margin-left: -70px;
-         margin-top: 20px;
+         margin-top: 40px;
         } 
       
        .rightx{
       background-color: rgb(255, 255, 255);
       width: 700px;
       height: 400px;
-      margin-top: 100px;
+      margin-top: 70px;
       margin-left: 100px;
       padding-left: 30px;
       padding-right: 30px;
@@ -332,7 +329,7 @@
       # ways to help  
       --------------------------------------------------------------*/
       #WTH     {
-          width: 95%;
+          width: 99%;
           height: 90vh;
           background-size: cover;
           margin-bottom: 00px;
@@ -344,9 +341,10 @@
          height: 600px;
          margin-left: 60px;
         
+        
         } 
       
-       .righty{
+       .righty{ 
       
       width: 600px;
       height: 400px;
@@ -428,5 +426,4 @@
           }
         }
       </style>
->>>>>>> f1d7075bb1fd57f6d5b5fff8385c1f05c68126ff
 @endsection
