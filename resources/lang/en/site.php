@@ -67,7 +67,16 @@ return [
     'minimum_age_value' => 'At least 16 years old',
     'minimum_weight' => 'Minimum Weight',
     'minimum_weight_value' => 'At least 50kg',
-    'eligibility_questions' => 'If you have any questions regarding your eligibility, please call +212 537 77 33 24',
+    'eligibility_questions' => "If you have any questions regarding your eligibility, please call \n+212 537 77 33 24",
     'login' => 'Log In',
+
+    //ways to help
+    'ways_to_help_title' => "Ways to Help",
+    'ways_to_help_description' => "Blood donation is a crucial and indispensable part of our mission to save lives. By actively participating in our blood donation program, you have the power to make a significant and meaningful impact on the lives of patients in need. Your generous contribution of blood can provide hope, healing, and a chance for a better tomorrow. Together, we can create a stronger and healthier community. Here are some ways you can help us in this life-saving endeavor:",
+    'way1' => "Become a Blood Donor",
+    'way2' => "Volunteer at Donation Centers",
+    'way3' => "Advocate for Blood Donation",
+    'way4'=> "Organize Blood Drives",
+    'way5'=> "Donate Funds",
 
 ];

@@ -40,26 +40,24 @@
     
 
     {{-- ways to help SECTION  --}}
-    <section id="WTH" >
-        <div class="lefty">
-          <h1>Ways to help</h1>
+    <section id="WTH">
+      <div class="lefty">
+          <h1>{{ __('site.ways_to_help_title') }}</h1>
           <hr class="divider-line" style="max-width:100%;width:100px;margin-top: 10px; margin-left: 0px; border: 3px solid #9e0000;">
-
-          <h2 style="text-align: justify;">Blood Center is public donation center with blood donation members in the changing health care system. Founded in 1978, Blood Center is one of the nation’s oldest and largest nonprofit transfusion medicine organizations. We provide a blood and volunteer services across the US. With our national footprint, deep community roots and specialized services, we are the thread that connects people and resources together to fuel progress in transfusion medicine. </h2>
-          <h3> &nbsp;</h3>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Inspiring people to give blood</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Specialist blood donors and clinical supervision.</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> High quality assessment, diagnosis and treatment.</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Offering specialized patient services and pharmaceuticals</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Increasing communication with our members.</h4>
-          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> Producing a safe and ready blood supply</h4>
-
-        </div>
-
-        <div class="righty">
-            <img class="imagey"  src="{{ asset('/public/img/waystohelp.jpg') }}" alt="Image">
-        </div>
-      </section>
+          <h2 style="text-align: justify;">{{ __('site.ways_to_help_description') }}</h2>
+          {{-- <h3> &nbsp;</h3> --}}
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.way1') }}</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.way2') }}</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.way3') }}</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.way4') }}</h4>
+          <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.way5') }}</h4>
+      </div>
+      
+      <div class="righty">
+          <img class="imagey" src="{{ asset('/public/img/waystohelp.jpg') }}" alt="Image">
+      </div>
+  </section>
+  
 
 
 

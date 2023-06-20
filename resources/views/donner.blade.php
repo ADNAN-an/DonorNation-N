@@ -5,7 +5,7 @@
 </head>
 @section("content")
 <section id="donner" class="d-flex align-items-center">
-  <div class="left">
+  <div class="left" style="width: 800px;margin-right: 100px">
       <h1>{{ __('site.donation_requirements_title') }}</h1>
       <h2>{{ __('site.donation_requirements_description') }}</h2>
       <h3>{{ __('site.blood_donation') }}</h3>
@@ -13,7 +13,7 @@
       <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.good_health_condition') }}</h4>
       <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.minimum_age') }}: {{ __('site.minimum_age_value') }}</h4>
       <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.minimum_weight') }}: {{ __('site.minimum_weight_value') }}</h4>
-      <h2>{{ __('site.eligibility_questions') }}</h2>
+      <h2>{!! nl2br(__('site.eligibility_questions')) !!} </h2>
 
       <a href="#about" class="btn-get-started scrollto">{{ __('site.learn_more') }}</a>
       @if(Auth::check())

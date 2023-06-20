@@ -72,19 +72,19 @@
 
             <div class="card card-primary col-md-8">
                 <div>
-                               <h4 class="mb-10 mt-20">Nom    &nbsp;  &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;  <span class="text-dangerx" style="color: rgb(162, 162, 172)"> {{ $user_profile_data->name  }}  </span></h4>
+                               <h4 class="mb-10 mt-20">Nom :&nbsp;  &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;  <span class="text-dangerx" style="color: rgb(162, 162, 172)"> {{ $user_profile_data->name  }}  </span></h4>
                                <hr>                         
-                               <h4 class="mb-10 mt-10">Prénom  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  <span class="text-dangerx"> {{ $user_profile_data->prenom  }}</span></h4>
+                               <h4 class="mb-10 mt-10">Prénom :&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  <span class="text-dangerx"> {{ $user_profile_data->prenom  }}</span></h4>
                                <hr>
-                               <h4 class="mb-10 mt-10">Email  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->email  }} </span></h4>
+                               <h4 class="mb-10 mt-10">Email :&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->email  }} </span></h4>
                                <hr>
-                               <h4 class="mb-10 mt-10">Numéro de Téléphone   &nbsp; &nbsp;  &emsp;  <span class="text-dangerx"> {{ $user_profile_data->phone_number  }} </span> </h4>
+                               <h4 class="mb-10 mt-10">Numéro de Téléphone :&nbsp; &nbsp;  &emsp;  <span class="text-dangerx"> {{ $user_profile_data->phone_number  }} </span> </h4>
                                <hr>
-                                <h4 class="mb-10 mt-10">Ville  &nbsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->City->name  }} </span></h4>
+                                <h4 class="mb-10 mt-10">Ville :&nbsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->City->name  }} </span></h4>
                                 <hr>
-                                 <h4 class="mb-10 mt-10">Type De Sang   &nbsp; &nbsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->BloodGroup->BloodGroup  }} </span></h4>
+                                 <h4 class="mb-10 mt-10">Type De Sang :&nbsp; &nbsp; &emsp; &emsp; &emsp; &emsp; <span class="text-dangerx"> {{ $user_profile_data->BloodGroup->BloodGroup  }} </span></h4>
                                  <hr>
-                                <h4 class="mb-20 mt-10">Date Du Dernier Don  &nbsp;  &emsp; &emsp;<span class="text-dangerx"> Le  {{ $user_profile_data->DateDernierDon }}  On ( {{ ($user_profile_data->created_at)->diffForHumans()  }} ) </span></h4>
+                                <h4 class="mb-20 mt-10">Date du dernier don : &nbsp;  &emsp; &emsp;<span class="text-dangerx"> Le  {{ $user_profile_data->DateDernierDon }}</span></h4>
 
                 </div>
             </div>

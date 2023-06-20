@@ -66,6 +66,16 @@ return [
     'minimum_age_value' => 'Al menos 16 años',
     'minimum_weight' => 'Peso Mínimo',
     'minimum_weight_value' => 'Al menos 50 kg',
-    'eligibility_questions' => 'Si tiene alguna pregunta sobre su elegibilidad, llame al +212 537 77 33 24',
+    'eligibility_questions' => "Si tiene alguna pregunta sobre su elegibilidad, llame al \n+212 537 77 33 24",
     'login' => 'Iniciar sesión',
+
+    //ways to help
+    'ways_to_help_title' => "Formas de Ayudar",
+    'ways_to_help_description' => "La donación de sangre es una parte crucial e indispensable de nuestra misión de salvar vidas. Al participar activamente en nuestro programa de donación de sangre, tienes el poder de generar un impacto significativo y significativo en la vida de los pacientes que lo necesitan. Tu generosa contribución de sangre puede brindar esperanza, curación y una oportunidad para un futuro mejor. Juntos, podemos crear una comunidad más fuerte y saludable. Aquí tienes algunas formas en las que puedes ayudarnos en este esfuerzo para salvar vidas:",
+    'way1' => "Conviértete en Donante de Sangre",
+    'way2' => "Voluntariado en Centros de Donación",
+    'way3' => "Promueve la Donación de Sangre",
+    'way4'=> "Organiza Colectas de Sangre",
+    'way5'=> "Donaciones Económicas",
+   
 ];

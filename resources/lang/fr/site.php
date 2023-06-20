@@ -68,5 +68,14 @@ return [
     'minimum_weight_value' => 'Au moins 50 kg',
     'eligibility_questions' => 'Si vous avez des questions concernant votre éligibilité, veuillez nous appeler au +212 537 77 33 24',
     'login' => 'Se connecter',
+
+    //ways to help
+    'ways_to_help_title' => "Comment aider?",
+    'ways_to_help_description' => "La donation de sang est une partie essentielle et indispensable de notre mission de sauver des vies. En participant activement à notre programme de donation de sang, vous avez le pouvoir d'avoir un impact significatif et profond sur la vie des patients dans le besoin. Votre généreuse contribution de sang peut apporter de l'espoir, favoriser la guérison et offrir une chance d'un avenir meilleur. Ensemble, nous pouvons créer une communauté plus forte et en meilleure santé. Voici quelques façons dont vous pouvez nous aider dans cette entreprise vitale :",
+    'way1' => "Devenez donneur de sang",
+    'way2' => "Volontariat dans les centres de don",
+    'way3' => "Promouvoir la donation de sang",
+    'way4'=> "Organiser des collectes de sang",
+    'way5'=> "Faire des dons financiers",
       
 ];
