@@ -23,7 +23,7 @@
                     {{ $post->excerpt  }}
                 </p>
                 <div class="my-4">
-                    <a href="{{ $post->slug }}" style="padding: 12px 35px;margin-top: 30px 30px;background: #1977cc; color: #fff;transition: 0.4s;border-radius: 50px;width: 60px"  class="my_btn">Read More ..</a>
+                    <a href="{{route('single_post',$post->slug)}}" style="padding: 12px 35px;margin-top: 30px 30px;background: #1977cc; color: #fff;transition: 0.4s;border-radius: 50px;width: 60px"  class="my_btn">Read More ..</a>
                 </div>
               </div>
             </div>

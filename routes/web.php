@@ -70,7 +70,7 @@ Route::group(
         Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 
         // route for single post
-        Route::get('/{slug}', [HomeController::class, 'single_post'])->name('single_post');
+        Route::get('/post/{slug}', [HomeController::class, 'single_post'])->name('single_post');
 
         // route for donner sang
         Route::get('/donner/donner_sang', [HomeController::class, 'donner_sang'])->name('donner_sang');
