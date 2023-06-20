@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" style="margin-top: 73px" class="d-flex align-items-center">
         <div class="container">
             <h1>{{ __('site.welcome_title') }}</h1>
             <h2>{{ __('site.welcome_subtitle') }}</h2>
