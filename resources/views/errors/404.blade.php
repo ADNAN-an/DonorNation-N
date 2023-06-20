@@ -7,7 +7,7 @@
 </head>
 <body style="  background: url(../public/img/error.jpg) top center no-repeat;">
 
-    <a href="{{route('home')}}"  id="eerrror" type="button" class="btn btn-primary">Back To Home</a>
+    <a href="{{route('home')}}"  type="button" class="btn btn-primary"><button id="eerrror" >Back To Home</button> </a>
     
 </body>
 </html>
@@ -16,6 +16,7 @@
 #eerrror {
     font-family: "Raleway", sans-serif;
     background-color: red;
+    height: 1000px;
     padding: 15px  45px ;
     border-radius: 10px;
     margin-top: 550px;
