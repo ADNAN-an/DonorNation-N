@@ -7,7 +7,7 @@
             <h2>{{ __('site.welcome_subtitle') }}</h2>
             <h3>{{ __('site.welcome_tagline') }}</h3>
 
-            <a href="{{ route('donner_sang') }}" class="btn-get-started scrollto">{{ __('site.donate_blood') }} </a>
+            <a href="{{ route('donner') }}" class="btn-get-started scrollto">{{ __('site.donate_blood') }} </a>
             <a href="{{ url('/blood-donation-process') }}" class="btn-get-started1 scrollto">{{ __('site.learn_more') }}</a>
         </div>
     </section>

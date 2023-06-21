@@ -92,6 +92,7 @@
                             </ul>
                         </li>
                     @endif
+                    <i class="fa-regular fa-circle-user fa-2xl" style="color: #000048;"></i>
                 @endguest
 
 
