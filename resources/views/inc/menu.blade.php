@@ -36,7 +36,7 @@
                 </li>
 
                 @guest
-                    <a href="{{ route('login') }}" class="appointment-btn scrollto">
+                    <a href="{{ route('login') }}" class="appointment-btn scrollto" style=" box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);">
                         <span class="d-none d-md-inline">{{ __('site.join_us') }}</span>
                     </a>
                 @else

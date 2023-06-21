@@ -15,11 +15,11 @@
       <h4><i class="fa-solid fa-angle-right fa-xs" style="color: #1e3050;"></i> {{ __('site.minimum_weight') }}: {{ __('site.minimum_weight_value') }}</h4>
       <h2>{!! nl2br(__('site.eligibility_questions')) !!} </h2>
 
-      <a href="#about" class="btn-get-started scrollto">{{ __('site.learn_more') }}</a>
+      <a href="#about" class="btn-get-started scrollto" style=" box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);">{{ __('site.learn_more') }} </a>
       @if(Auth::check())
-          <a href="{{ route('donner_sang') }}" class="btn-get-started1 scrollto">{{ __('site.donate_blood') }}</a>
+          <a href="{{ route('donner_sang') }}" class="btn-get-started1 scrollto" style=" box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);">{{ __('site.donate_blood') }}</a>
       @else
-          <a href="{{ route('login') }}" class="btn-get-started1 scrollto">{{ __('site.login') }}</a>
+          <a href="{{ route('login') }}" class="btn-get-started1 scrollto" style=" box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);">{{ __('site.login') }}</a>
       @endif
   </div>
 
