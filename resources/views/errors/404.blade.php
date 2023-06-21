@@ -20,7 +20,7 @@
     padding: 15px  45px ;
     border-radius: 10px;
     margin-top: 550px;
-    margin-left: 630px;
+    margin-left: 650px;
     color: white;
     font-weight: 700;
     font-size: 20px;
