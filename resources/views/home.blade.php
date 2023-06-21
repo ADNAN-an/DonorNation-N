@@ -37,8 +37,61 @@
       </div>
   </section>
   
+  {{-- start quotes --}}
+  <section style="height: 400px;background: #ffffff;" > 
+    <style>
+      .box {
+         background-color:#c9e5fa;
+         height: 250px;
+         border: solid 1px gray;
+         width:29%;
+         
+         display:inline-block;
+         
+         margin:17px 0;
+         border-radius:6px;
+      }
+      
+      .text {
+         padding-left: 40px;
+         padding-right: 30px;
+         padding-top: 60px;
+         font-size: 17px;
+         font-weight:700;
+         text-align:center;
+      }
+      
+      #container {
+         white-space:nowrap;
+         text-align:center;
+      }
+      </style> 
+       </head> 
+       <body> 
+        <div id="container"> 
+         
+         <div class="box">    
+         <div class="text" >
+           <i class="fa-solid fa-quote-left fa-2xl" style="color: #7086be;"></i> Le don de sang est un acte de générosité <br>qui transcende les frontières et les <br>différences. En donnant notre sang, nous<br> donnons une chance à quelqu'un de vivre <i class="fa-solid fa-quote-right fa-2xl" style="color: #7086be;"></i> 
+          </div>       
+         </div> 
+         <div class="box" style="margin-left: 20px;margin-right:20px ;"> 
+          <div class="text">
+            <i class="fa-solid fa-quote-left fa-2xl" style="color: #7086be;margin-bottom: 5px;"></i> Le don de sang est un cadeau précieux <br> qui sauve des vies et apporte de <br>l'espoir aux personnes dans <br> le besoin <i class="fa-solid fa-quote-right fa-2xl" style="color: #7086be;"></i> 
+          </div>       
+         </div> 
+         <div class="box"> 
+          <div class="text" style="width: 200px;padding-left: 60px;">
+           <i class="fa-solid fa-quote-left fa-2xl" style="color: #7086be;"></i> Chaque goutte de sang donnée est une <br>promessede vie. En donnant notre sang,<br>nous devenons les hérosanonymes qui<br> sauvent des vies chaque jour <i class="fa-solid fa-quote-right fa-2xl" style="color: #7086be;"></i> 
+          </div> 
+         </div> 
+   
+        </div>  
+       </body>
+   </section>
     
 
+   {{-- end quotes --}}
     {{-- ways to help SECTION  --}}
     <section id="WTH">
       <div class="lefty">
