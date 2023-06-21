@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
+use App\Contact;
 use Illuminate\Http\Client\Request as ClientRequest;
 use Illuminate\Http\Request;
 use App\Donner;
-use App\Models\Contact as ModelsContact;
+use App\Contact as ModelsContact;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use TCG\Voyager\Models\Post;
