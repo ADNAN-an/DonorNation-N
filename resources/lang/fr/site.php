@@ -77,5 +77,12 @@ return [
     'way3' => "Promouvoir la donation de sang",
     'way4'=> "Organiser des collectes de sang",
     'way5'=> "Faire des dons financiers",
+
+    //reserve
+    'reserve_title' => 'Réservez votre rendez-vous pour un don du sang',
+    'select_date' => 'Sélectionnez la date du rendez-vous :',
+    'reserve_now' => 'Réserver maintenant',
+    'choose_collection_center' => 'Choisissez le centre de collecte :',
+    'reservation_success' => 'Félicitations ! Votre réservation a été effectuée avec succès.',
       
 ];

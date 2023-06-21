@@ -96,12 +96,12 @@
         <div class="container my-5">
 
             <div class="section-title">
-                <h2>Réservez votre rendez-vous pour un don du sang </h2>
+                <h2>{{ __('site.reserve_title') }}</h2>
             </div>
 
             @if (session()->has('success'))
                 <div class="alert alert-success" role="alert">
-                    <strong>{{ session()->get('success') }}</strong>
+                    <strong>{{ session()->get('success') }}</strong> 
                 </div>
             @endif
 
@@ -121,7 +121,7 @@
                                             <div class="row">
 
                                                 <div style="width: 900px" class="form-group mx-5">
-                                                    <label for="">Sélectionnez la date du rendez-vous :</label>
+                                                    <label for="">{{ __('site.select_date') }}</label>
                                                     <input {{-- step="7" --}} name="date" class="form-control"
                                                         type="date">
                                                     @error('date')
@@ -133,7 +133,7 @@
 
                                                 <div style="width: 200px; margin-top: 23px;" class="form-group">
                                                     <label for=""></label>
-                                                    <button class="btn btn-primary">Réserver maintenant</button>
+                                                    <button class="btn btn-primary">{{ __('site.reserve_now') }}</button>
                                                 </div>
 
                                             </div>
@@ -146,7 +146,7 @@
                         <div class="form-group mx-5">
                             <br>
                             <label for="">
-                                <h4>Choisissez le centre de collecte :</h4>
+                                <h4>{{ __('site.choose_collection_center') }}</h4>
                             </label>
                             @error('url')
                                 <div class="alert alert-danger">

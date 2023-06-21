@@ -79,4 +79,11 @@ return [
     'way4'=> "Organize Blood Drives",
     'way5'=> "Donate Funds",
 
+    //reserve
+    'reserve_title' => 'Book your blood donation appointment',
+    'select_date' => 'Select the appointment date:',
+    'reserve_now' => 'Book Now',
+    'choose_collection_center' => 'Choose the donation center:',
+    'reservation_success' => 'Congratulations! Your reservation has been successfully made.',
+
 ];

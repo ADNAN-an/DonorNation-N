@@ -67,9 +67,9 @@
         <!-- start Other Donors -->
 
         @if ($otherDonors->isEmpty())
-        <div class="alert alert-danger text-center noDonorsMsg" role="alert">
+        {{-- <div class="alert alert-danger text-center noDonorsMsg" role="alert">
             Malheureusement, il n'y a pas de donneurs de D'autres groupes sanguins qui peuvent donner.
-        </div>
+        </div> --}}
         @endif
 
         <div class="searchResult container d-flex flex-wrap gap-4 justify-content-center">
@@ -77,9 +77,9 @@
             <div class="resultTitle alert alert-success text-center fs-3 w-100" role="alert">
                 D'autres groupes sanguins qui peuvent donner à <span
                     class="text-danger fw-bold">{{ $searchedBloodGroup->BloodGroup }}</span>
-                @isset($searchedCity)
+                {{-- @isset($searchedCity)
                     Ville: <span class="text-danger fw-bold">{{ $searchedCity->name }}</span>
-                @endisset
+                @endisset --}}
              </div>
 
 
@@ -119,7 +119,7 @@
 
         @else
            <div class="alert alert-danger text-center noDonorsMsg" role="alert">
-           Oops non  donneurs groupes here
+            Malheureusement, il n'y a pas de donneurs de D'autres groupes sanguins qui peuvent donner.
         </div>
         @endif
        <!-- end Other Donors section -->

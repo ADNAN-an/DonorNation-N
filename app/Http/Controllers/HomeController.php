@@ -83,7 +83,7 @@ class HomeController extends Controller
             'donner_langtitude' => $request->get('lng'),
         ]);
 
-        return redirect()->back()->with('success', 'Félicitations ! Votre réservation a été effectuée avec succès.');
+        return redirect()->back()->with('success', __('site.reservation_success'));
     }
 
     // method for user profile

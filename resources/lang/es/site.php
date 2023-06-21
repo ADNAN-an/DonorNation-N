@@ -77,5 +77,12 @@ return [
     'way3' => "Promueve la Donación de Sangre",
     'way4'=> "Organiza Colectas de Sangre",
     'way5'=> "Donaciones Económicas",
+
+    //reserve
+    'reserve_title' => 'Reserve su cita para donar sangre',
+    'select_date' => 'Seleccione la fecha de la cita:',
+    'reserve_now' => 'Reservar ahora',
+    'choose_collection_center' => 'Seleccione el centro de donación:',
+    'reservation_success' => '¡Felicitaciones! Su reserva se ha realizado con éxito.',
    
 ];
